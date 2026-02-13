@@ -8,7 +8,7 @@ mod runner;
 use clap::{Parser, Subcommand};
 use colored::Colorize;
 use exercise::{Exercise, ExerciseStatus, load_exercises};
-use include_dir::{include_dir, Dir};
+use include_dir::{Dir, include_dir};
 use std::collections::HashMap;
 use std::path::{Path, PathBuf};
 use std::process;
@@ -267,7 +267,10 @@ fn cmd_init(path: &Path) {
     }
     println!("  {} hints/", "ok".green());
 
-    println!("\n{} Project initialized successfully!", "ok".green().bold());
+    println!(
+        "\n{} Project initialized successfully!",
+        "ok".green().bold()
+    );
     println!("\nTo get started:");
     println!("  {} {}", "cd".cyan(), path.display());
     println!("  {}", "rexxlings".cyan());
@@ -555,11 +558,7 @@ fn cmd_hint(exercises: &[Exercise], name: Option<String>) {
                     }
                 }
             } else {
-                println!(
-                    "\n{} {}",
-                    "No hint available for".yellow(),
-                    ex.name.cyan()
-                );
+                println!("\n{} {}", "No hint available for".yellow(), ex.name.cyan());
                 println!("Hint file not found: {}", hint_path.display());
             }
         }
@@ -608,10 +607,7 @@ fn cmd_reset(exercises: &[Exercise], name: Option<String>) {
                     Err(e) => eprintln!("{} {}", "Error reading exercise:".red(), e),
                 }
             } else {
-                println!(
-                    "{}",
-                    "No original version found. Cannot reset.".yellow()
-                );
+                println!("{}", "No original version found. Cannot reset.".yellow());
             }
         }
         None => {
