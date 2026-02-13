@@ -1,0 +1,676 @@
+[[exercises]]
+name = "01-hello"
+path = "exercises/00-intro/01-hello.rexx"
+mode = "compile"
+
+[[exercises]]
+name = "02-comments"
+path = "exercises/00-intro/02-comments.rexx"
+mode = "compile"
+
+[[exercises]]
+name = "03-strings"
+path = "exercises/00-intro/03-strings.rexx"
+mode = "compile"
+
+[[exercises]]
+name = "01-say"
+path = "exercises/01-variables/01-say.rexx"
+mode = "compile"
+
+[[exercises]]
+name = "02-assignment"
+path = "exercises/01-variables/02-assignment.rexx"
+mode = "test"
+
+[[exercises]]
+name = "03-uninitialized"
+path = "exercises/01-variables/03-uninitialized.rexx"
+mode = "test"
+
+[[exercises]]
+name = "04-concat-blank"
+path = "exercises/01-variables/04-concat-blank.rexx"
+mode = "test"
+
+[[exercises]]
+name = "05-concat-abuttal"
+path = "exercises/01-variables/05-concat-abuttal.rexx"
+mode = "test"
+
+[[exercises]]
+name = "06-concat-combined"
+path = "exercises/01-variables/06-concat-combined.rexx"
+mode = "test"
+
+[[exercises]]
+name = "01-addition"
+path = "exercises/02-arithmetic/01-addition.rexx"
+mode = "test"
+
+[[exercises]]
+name = "02-multiply"
+path = "exercises/02-arithmetic/02-multiply.rexx"
+mode = "test"
+
+[[exercises]]
+name = "03-integer-div"
+path = "exercises/02-arithmetic/03-integer-div.rexx"
+mode = "test"
+
+[[exercises]]
+name = "04-power"
+path = "exercises/02-arithmetic/04-power.rexx"
+mode = "test"
+
+[[exercises]]
+name = "05-precedence"
+path = "exercises/02-arithmetic/05-precedence.rexx"
+mode = "test"
+
+[[exercises]]
+name = "06-comparison"
+path = "exercises/02-arithmetic/06-comparison.rexx"
+mode = "test"
+
+[[exercises]]
+name = "07-logical"
+path = "exercises/02-arithmetic/07-logical.rexx"
+mode = "test"
+
+[[exercises]]
+name = "01-length"
+path = "exercises/03-strings-intro/01-length.rexx"
+mode = "test"
+
+[[exercises]]
+name = "02-substr"
+path = "exercises/03-strings-intro/02-substr.rexx"
+mode = "test"
+
+[[exercises]]
+name = "03-left-right"
+path = "exercises/03-strings-intro/03-left-right.rexx"
+mode = "test"
+
+[[exercises]]
+name = "04-copies"
+path = "exercises/03-strings-intro/04-copies.rexx"
+mode = "test"
+
+[[exercises]]
+name = "05-reverse"
+path = "exercises/03-strings-intro/05-reverse.rexx"
+mode = "test"
+
+[[exercises]]
+name = "06-pos"
+path = "exercises/03-strings-intro/06-pos.rexx"
+mode = "test"
+
+[[exercises]]
+name = "01-if-then"
+path = "exercises/04-conditionals/01-if-then.rexx"
+mode = "test"
+
+[[exercises]]
+name = "02-if-else"
+path = "exercises/04-conditionals/02-if-else.rexx"
+mode = "test"
+
+[[exercises]]
+name = "03-nested-if"
+path = "exercises/04-conditionals/03-nested-if.rexx"
+mode = "test"
+
+[[exercises]]
+name = "04-nop"
+path = "exercises/04-conditionals/04-nop.rexx"
+mode = "test"
+
+[[exercises]]
+name = "05-compound"
+path = "exercises/04-conditionals/05-compound.rexx"
+mode = "test"
+
+[[exercises]]
+name = "06-strict-comparison"
+path = "exercises/04-conditionals/06-strict-comparison.rexx"
+mode = "test"
+
+[[exercises]]
+name = "01-basic-select"
+path = "exercises/05-select/01-basic-select.rexx"
+mode = "test"
+
+[[exercises]]
+name = "02-otherwise"
+path = "exercises/05-select/02-otherwise.rexx"
+mode = "test"
+
+[[exercises]]
+name = "03-do-blocks"
+path = "exercises/05-select/03-do-blocks.rexx"
+mode = "test"
+
+[[exercises]]
+name = "04-nested-select"
+path = "exercises/05-select/04-nested-select.rexx"
+mode = "test"
+
+[[exercises]]
+name = "05-fizzbuzz"
+path = "exercises/05-select/05-fizzbuzz.rexx"
+mode = "test"
+
+[[exercises]]
+name = "01-simple-do"
+path = "exercises/06-do-loops/01-simple-do.rexx"
+mode = "compile"
+
+[[exercises]]
+name = "02-do-count"
+path = "exercises/06-do-loops/02-do-count.rexx"
+mode = "test"
+
+[[exercises]]
+name = "03-do-by"
+path = "exercises/06-do-loops/03-do-by.rexx"
+mode = "test"
+
+[[exercises]]
+name = "04-do-forever"
+path = "exercises/06-do-loops/04-do-forever.rexx"
+mode = "test"
+
+[[exercises]]
+name = "05-do-while"
+path = "exercises/06-do-loops/05-do-while.rexx"
+mode = "test"
+
+[[exercises]]
+name = "06-do-until"
+path = "exercises/06-do-loops/06-do-until.rexx"
+mode = "test"
+
+[[exercises]]
+name = "07-leave"
+path = "exercises/06-do-loops/07-leave.rexx"
+mode = "test"
+
+[[exercises]]
+name = "08-iterate"
+path = "exercises/06-do-loops/08-iterate.rexx"
+mode = "test"
+
+[[exercises]]
+name = "09-nested-loops"
+path = "exercises/06-do-loops/09-nested-loops.rexx"
+mode = "test"
+
+[[exercises]]
+name = "01-strip"
+path = "exercises/07-string-bifs/01-strip.rexx"
+mode = "test"
+
+[[exercises]]
+name = "02-translate"
+path = "exercises/07-string-bifs/02-translate.rexx"
+mode = "test"
+
+[[exercises]]
+name = "03-space"
+path = "exercises/07-string-bifs/03-space.rexx"
+mode = "test"
+
+[[exercises]]
+name = "04-overlay"
+path = "exercises/07-string-bifs/04-overlay.rexx"
+mode = "test"
+
+[[exercises]]
+name = "05-insert"
+path = "exercises/07-string-bifs/05-insert.rexx"
+mode = "test"
+
+[[exercises]]
+name = "06-delstr"
+path = "exercises/07-string-bifs/06-delstr.rexx"
+mode = "test"
+
+[[exercises]]
+name = "07-changestr"
+path = "exercises/07-string-bifs/07-changestr.rexx"
+mode = "test"
+
+[[exercises]]
+name = "08-compare"
+path = "exercises/07-string-bifs/08-compare.rexx"
+mode = "test"
+
+[[exercises]]
+name = "01-words-word"
+path = "exercises/08-word-bifs/01-words-word.rexx"
+mode = "test"
+
+[[exercises]]
+name = "02-wordindex"
+path = "exercises/08-word-bifs/02-wordindex.rexx"
+mode = "test"
+
+[[exercises]]
+name = "03-subword"
+path = "exercises/08-word-bifs/03-subword.rexx"
+mode = "test"
+
+[[exercises]]
+name = "04-wordpos"
+path = "exercises/08-word-bifs/04-wordpos.rexx"
+mode = "test"
+
+[[exercises]]
+name = "05-delword"
+path = "exercises/08-word-bifs/05-delword.rexx"
+mode = "test"
+
+[[exercises]]
+name = "06-iteration"
+path = "exercises/08-word-bifs/06-iteration.rexx"
+mode = "test"
+
+[[exercises]]
+name = "07-combined"
+path = "exercises/08-word-bifs/07-combined.rexx"
+mode = "test"
+
+[[exercises]]
+name = "01-word-split"
+path = "exercises/09-parse/01-word-split.rexx"
+mode = "test"
+
+[[exercises]]
+name = "02-literal"
+path = "exercises/09-parse/02-literal.rexx"
+mode = "test"
+
+[[exercises]]
+name = "03-absolute"
+path = "exercises/09-parse/03-absolute.rexx"
+mode = "test"
+
+[[exercises]]
+name = "04-relative"
+path = "exercises/09-parse/04-relative.rexx"
+mode = "test"
+
+[[exercises]]
+name = "05-dot"
+path = "exercises/09-parse/05-dot.rexx"
+mode = "test"
+
+[[exercises]]
+name = "06-parse-value"
+path = "exercises/09-parse/06-parse-value.rexx"
+mode = "test"
+
+[[exercises]]
+name = "07-parse-arg"
+path = "exercises/09-parse/07-parse-arg.rexx"
+mode = "test"
+
+[[exercises]]
+name = "01-call-return"
+path = "exercises/10-subroutines/01-call-return.rexx"
+mode = "test"
+
+[[exercises]]
+name = "02-procedure"
+path = "exercises/10-subroutines/02-procedure.rexx"
+mode = "test"
+
+[[exercises]]
+name = "03-expose"
+path = "exercises/10-subroutines/03-expose.rexx"
+mode = "test"
+
+[[exercises]]
+name = "04-args"
+path = "exercises/10-subroutines/04-args.rexx"
+mode = "test"
+
+[[exercises]]
+name = "05-function-call"
+path = "exercises/10-subroutines/05-function-call.rexx"
+mode = "test"
+
+[[exercises]]
+name = "06-recursion"
+path = "exercises/10-subroutines/06-recursion.rexx"
+mode = "test"
+
+[[exercises]]
+name = "07-fibonacci"
+path = "exercises/10-subroutines/07-fibonacci.rexx"
+mode = "test"
+
+[[exercises]]
+name = "08-mutual"
+path = "exercises/10-subroutines/08-mutual.rexx"
+mode = "test"
+
+[[exercises]]
+name = "01-basics"
+path = "exercises/11-stem-variables/01-basics.rexx"
+mode = "test"
+
+[[exercises]]
+name = "02-defaults"
+path = "exercises/11-stem-variables/02-defaults.rexx"
+mode = "test"
+
+[[exercises]]
+name = "03-string-keys"
+path = "exercises/11-stem-variables/03-string-keys.rexx"
+mode = "test"
+
+[[exercises]]
+name = "04-iteration"
+path = "exercises/11-stem-variables/04-iteration.rexx"
+mode = "test"
+
+[[exercises]]
+name = "05-multidim"
+path = "exercises/11-stem-variables/05-multidim.rexx"
+mode = "test"
+
+[[exercises]]
+name = "06-patterns"
+path = "exercises/11-stem-variables/06-patterns.rexx"
+mode = "test"
+
+[[exercises]]
+name = "01-abs-sign"
+path = "exercises/12-numeric-bifs/01-abs-sign.rexx"
+mode = "test"
+
+[[exercises]]
+name = "02-max-min"
+path = "exercises/12-numeric-bifs/02-max-min.rexx"
+mode = "test"
+
+[[exercises]]
+name = "03-trunc"
+path = "exercises/12-numeric-bifs/03-trunc.rexx"
+mode = "test"
+
+[[exercises]]
+name = "04-format"
+path = "exercises/12-numeric-bifs/04-format.rexx"
+mode = "test"
+
+[[exercises]]
+name = "05-random"
+path = "exercises/12-numeric-bifs/05-random.rexx"
+mode = "test"
+
+[[exercises]]
+name = "01-d2x-x2d"
+path = "exercises/13-conversions/01-d2x-x2d.rexx"
+mode = "test"
+
+[[exercises]]
+name = "02-c2d-d2c"
+path = "exercises/13-conversions/02-c2d-d2c.rexx"
+mode = "test"
+
+[[exercises]]
+name = "03-c2x-x2c"
+path = "exercises/13-conversions/03-c2x-x2c.rexx"
+mode = "test"
+
+[[exercises]]
+name = "04-b2x-x2b"
+path = "exercises/13-conversions/04-b2x-x2b.rexx"
+mode = "test"
+
+[[exercises]]
+name = "05-datatype"
+path = "exercises/13-conversions/05-datatype.rexx"
+mode = "test"
+
+[[exercises]]
+name = "01-multi-template"
+path = "exercises/14-advanced-parse/01-multi-template.rexx"
+mode = "test"
+
+[[exercises]]
+name = "02-parse-upper"
+path = "exercises/14-advanced-parse/02-parse-upper.rexx"
+mode = "test"
+
+[[exercises]]
+name = "03-variable-pattern"
+path = "exercises/14-advanced-parse/03-variable-pattern.rexx"
+mode = "test"
+
+[[exercises]]
+name = "04-parse-source"
+path = "exercises/14-advanced-parse/04-parse-source.rexx"
+mode = "test"
+
+[[exercises]]
+name = "05-csv"
+path = "exercises/14-advanced-parse/05-csv.rexx"
+mode = "test"
+
+[[exercises]]
+name = "01-computed"
+path = "exercises/15-advanced-do/01-computed.rexx"
+mode = "test"
+
+[[exercises]]
+name = "02-combo-while"
+path = "exercises/15-advanced-do/02-combo-while.rexx"
+mode = "test"
+
+[[exercises]]
+name = "03-combo-until"
+path = "exercises/15-advanced-do/03-combo-until.rexx"
+mode = "test"
+
+[[exercises]]
+name = "04-loop-idioms"
+path = "exercises/15-advanced-do/04-loop-idioms.rexx"
+mode = "test"
+
+[[exercises]]
+name = "01-basic"
+path = "exercises/16-interpret/01-basic.rexx"
+mode = "test"
+
+[[exercises]]
+name = "02-dynamic-assign"
+path = "exercises/16-interpret/02-dynamic-assign.rexx"
+mode = "test"
+
+[[exercises]]
+name = "03-dynamic-call"
+path = "exercises/16-interpret/03-dynamic-call.rexx"
+mode = "test"
+
+[[exercises]]
+name = "04-calculator"
+path = "exercises/16-interpret/04-calculator.rexx"
+mode = "test"
+
+[[exercises]]
+name = "01-signal-label"
+path = "exercises/17-signal/01-signal-label.rexx"
+mode = "test"
+
+[[exercises]]
+name = "02-signal-value"
+path = "exercises/17-signal/02-signal-value.rexx"
+mode = "test"
+
+[[exercises]]
+name = "03-signal-syntax"
+path = "exercises/17-signal/03-signal-syntax.rexx"
+mode = "test"
+
+[[exercises]]
+name = "04-signal-novalue"
+path = "exercises/17-signal/04-signal-novalue.rexx"
+mode = "test"
+
+[[exercises]]
+name = "05-condition"
+path = "exercises/17-signal/05-condition.rexx"
+mode = "test"
+
+[[exercises]]
+name = "01-digits"
+path = "exercises/18-numeric-precision/01-digits.rexx"
+mode = "test"
+
+[[exercises]]
+name = "02-large-numbers"
+path = "exercises/18-numeric-precision/02-large-numbers.rexx"
+mode = "test"
+
+[[exercises]]
+name = "03-precision"
+path = "exercises/18-numeric-precision/03-precision.rexx"
+mode = "test"
+
+[[exercises]]
+name = "04-fuzz"
+path = "exercises/18-numeric-precision/04-fuzz.rexx"
+mode = "test"
+
+[[exercises]]
+name = "05-form"
+path = "exercises/18-numeric-precision/05-form.rexx"
+mode = "test"
+
+[[exercises]]
+name = "06-factorial100"
+path = "exercises/18-numeric-precision/06-factorial100.rexx"
+mode = "test"
+
+[[exercises]]
+name = "01-push-pull"
+path = "exercises/19-queues/01-push-pull.rexx"
+mode = "test"
+
+[[exercises]]
+name = "02-queue-fifo"
+path = "exercises/19-queues/02-queue-fifo.rexx"
+mode = "test"
+
+[[exercises]]
+name = "03-queued"
+path = "exercises/19-queues/03-queued.rexx"
+mode = "test"
+
+[[exercises]]
+name = "04-patterns"
+path = "exercises/19-queues/04-patterns.rexx"
+mode = "test"
+
+[[exercises]]
+name = "01-system"
+path = "exercises/20-address/01-system.rexx"
+mode = "compile"
+
+[[exercises]]
+name = "02-rc"
+path = "exercises/20-address/02-rc.rexx"
+mode = "compile"
+
+[[exercises]]
+name = "03-address-bif"
+path = "exercises/20-address/03-address-bif.rexx"
+mode = "compile"
+
+[[exercises]]
+name = "04-multi-step"
+path = "exercises/20-address/04-multi-step.rexx"
+mode = "compile"
+
+[[exercises]]
+name = "01-date"
+path = "exercises/21-date-time/01-date.rexx"
+mode = "test"
+
+[[exercises]]
+name = "02-time"
+path = "exercises/21-date-time/02-time.rexx"
+mode = "test"
+
+[[exercises]]
+name = "03-date-formats"
+path = "exercises/21-date-time/03-date-formats.rexx"
+mode = "test"
+
+[[exercises]]
+name = "04-elapsed"
+path = "exercises/21-date-time/04-elapsed.rexx"
+mode = "test"
+
+[[exercises]]
+name = "05-xrange"
+path = "exercises/21-date-time/05-xrange.rexx"
+mode = "test"
+
+[[exercises]]
+name = "01-word-frequency"
+path = "exercises/22-practical/01-word-frequency.rexx"
+mode = "test"
+
+[[exercises]]
+name = "02-caesar"
+path = "exercises/22-practical/02-caesar.rexx"
+mode = "test"
+
+[[exercises]]
+name = "03-palindrome"
+path = "exercises/22-practical/03-palindrome.rexx"
+mode = "test"
+
+[[exercises]]
+name = "04-number-guess"
+path = "exercises/22-practical/04-number-guess.rexx"
+mode = "test"
+
+[[exercises]]
+name = "05-roman"
+path = "exercises/22-practical/05-roman.rexx"
+mode = "test"
+
+[[exercises]]
+name = "06-ini-parser"
+path = "exercises/22-practical/06-ini-parser.rexx"
+mode = "test"
+
+[[exercises]]
+name = "07-bubble-sort"
+path = "exercises/22-practical/07-bubble-sort.rexx"
+mode = "test"
+
+[[exercises]]
+name = "08-rpn"
+path = "exercises/22-practical/08-rpn.rexx"
+mode = "test"
+
+[[exercises]]
+name = "09-formatter"
+path = "exercises/22-practical/09-formatter.rexx"
+mode = "test"
+
+[[exercises]]
+name = "10-quiz"
+path = "exercises/22-practical/10-quiz.rexx"
+mode = "test"
+
+# Total: 135 exercises
