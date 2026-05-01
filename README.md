@@ -25,6 +25,24 @@ rexxlings
 
 Watch mode monitors your exercise files and automatically re-checks when you save.
 
+## Development
+
+Build, test, and lint go through [`just`](https://github.com/casey/just). The
+`justfile` is the single source of truth — CI calls `just ci` and nothing else,
+so local checks cannot drift from CI.
+
+```sh
+just ci          # fmt-check + clippy (warnings=errors) + tests + release build
+just fmt         # apply rustfmt
+just test        # run tests only
+just install     # install rexxlings into ~/.cargo/bin
+just stats       # LOC + largest files + module tree (needs scc + cargo-modules)
+```
+
+The toolchain version is pinned in `rust-toolchain.toml` and matched by the
+`toolchain:` input of every CI workflow under `.forgejo/workflows/`. CI runs on
+Forgejo Actions (Linux) for every pull request to `main`.
+
 ## How It Works
 
 1. Rexxlings presents exercises one at a time, starting with the basics
