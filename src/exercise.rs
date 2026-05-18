@@ -5,19 +5,14 @@ use serde::Deserialize;
 use std::path::PathBuf;
 
 /// Exercise mode - how to verify completion
-#[derive(Debug, Clone, Deserialize, PartialEq)]
+#[derive(Debug, Clone, Default, Deserialize, PartialEq)]
 #[serde(rename_all = "lowercase")]
 pub enum ExerciseMode {
     /// Just needs to run without errors
     Compile,
     /// Needs to run and pass embedded assertion checks
+    #[default]
     Test,
-}
-
-impl Default for ExerciseMode {
-    fn default() -> Self {
-        Self::Test
-    }
 }
 
 /// An exercise definition from info.toml
@@ -95,10 +90,10 @@ impl Exercise {
     pub fn hint_path(&self) -> PathBuf {
         // Convert exercises/00-intro/01-hello.rexx to hints/00-intro/01-hello.md
         let mut hint_path = PathBuf::from("hints");
-        if let Some(parent) = self.path.parent() {
-            if let Some(topic) = parent.file_name() {
-                hint_path.push(topic);
-            }
+        if let Some(parent) = self.path.parent()
+            && let Some(topic) = parent.file_name()
+        {
+            hint_path.push(topic);
         }
         if let Some(stem) = self.path.file_stem() {
             hint_path.push(format!("{}.md", stem.to_string_lossy()));
@@ -109,10 +104,10 @@ impl Exercise {
     /// Get the path to the solution file for this exercise
     pub fn solution_path(&self) -> PathBuf {
         let mut solution_path = PathBuf::from("solutions");
-        if let Some(parent) = self.path.parent() {
-            if let Some(topic) = parent.file_name() {
-                solution_path.push(topic);
-            }
+        if let Some(parent) = self.path.parent()
+            && let Some(topic) = parent.file_name()
+        {
+            solution_path.push(topic);
         }
         if let Some(name) = self.path.file_name() {
             solution_path.push(name);

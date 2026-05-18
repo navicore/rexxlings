@@ -41,23 +41,22 @@ impl StatusCache {
         };
 
         // Quick pre-filter: if file contains marker, skip expensive checks
-        if let Ok(content) = std::fs::read_to_string(&exercise.path) {
-            if content.contains("/* I AM NOT DONE */") {
-                if let Some(mtime) = current_mtime {
-                    self.cache
-                        .insert(exercise.path.clone(), (mtime, ExerciseStatus::NotDone));
-                }
-                return ExerciseStatus::NotDone;
+        if let Ok(content) = std::fs::read_to_string(&exercise.path)
+            && content.contains("/* I AM NOT DONE */")
+        {
+            if let Some(mtime) = current_mtime {
+                self.cache
+                    .insert(exercise.path.clone(), (mtime, ExerciseStatus::NotDone));
             }
+            return ExerciseStatus::NotDone;
         }
 
         // Check cache: if mtime unchanged, return cached status
-        if let Some(mtime) = current_mtime {
-            if let Some((cached_mtime, cached_status)) = self.cache.get(&exercise.path) {
-                if *cached_mtime == mtime {
-                    return cached_status.clone();
-                }
-            }
+        if let Some(mtime) = current_mtime
+            && let Some((cached_mtime, cached_status)) = self.cache.get(&exercise.path)
+            && *cached_mtime == mtime
+        {
+            return cached_status.clone();
         }
 
         // Cache miss or file changed - run the full status check
@@ -334,15 +333,12 @@ fn cmd_watch(exercises: &[Exercise]) {
         // Check files every 250ms
         let mut changed = false;
         for ex in exercises {
-            if let Ok(meta) = std::fs::metadata(&ex.path) {
-                if let Ok(mtime) = meta.modified() {
-                    if mtime.elapsed().unwrap_or(Duration::from_secs(1000))
-                        < Duration::from_millis(500)
-                    {
-                        changed = true;
-                        break;
-                    }
-                }
+            if let Ok(meta) = std::fs::metadata(&ex.path)
+                && let Ok(mtime) = meta.modified()
+                && mtime.elapsed().unwrap_or(Duration::from_secs(1000)) < Duration::from_millis(500)
+            {
+                changed = true;
+                break;
             }
         }
 
@@ -403,11 +399,11 @@ fn display_current_exercise(
                     println!("  Status: {}\n", "Waiting for you to start...".yellow());
 
                     // Show exercise description from opening /* ... */ block
-                    if let Ok(content) = std::fs::read_to_string(&exercise.path) {
-                        if let Some(header) = extract_header_comment(&content) {
-                            for line in header.lines() {
-                                println!("  {}", line.dimmed());
-                            }
+                    if let Ok(content) = std::fs::read_to_string(&exercise.path)
+                        && let Some(header) = extract_header_comment(&content)
+                    {
+                        for line in header.lines() {
+                            println!("  {}", line.dimmed());
                         }
                     }
 
@@ -480,8 +476,8 @@ fn extract_header_comment(content: &str) -> Option<String> {
             .lines()
             .map(|l| {
                 let stripped = l.trim();
-                if stripped.starts_with("* ") {
-                    &stripped[2..]
+                if let Some(rest) = stripped.strip_prefix("* ") {
+                    rest
                 } else if stripped == "*" {
                     ""
                 } else {
@@ -680,10 +676,9 @@ fn show_progress(exercises: &[Exercise], cache: &mut StatusCache) {
     };
 
     let bar_width = 30;
-    let filled = if total > 0 {
-        (done * bar_width) / total
-    } else {
-        0
+    let filled = match total > 0 {
+        true => (done * bar_width) / total,
+        false => 0,
     };
     let empty = bar_width - filled;
 
