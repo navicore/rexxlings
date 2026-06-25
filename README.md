@@ -4,10 +4,14 @@ Interactive exercises for learning REXX, a classic scripting language.
 
 Inspired by [rustlings](https://github.com/rust-lang/rustlings), rexxlings guides you through REXX programming concepts via small exercises that you fix and complete in your editor.
 
+**Home Code Repository** is at [git.navicore.tech](https://git.navicore.tech/navicore/rexxlings)
+
+**PRs and issues** welcome at [codeberg.org mirror](https://codeberg.org/navicore/rexxlings)
+
 ## Prerequisites
 
 - **Rust toolchain** (to build rexxlings): [rustup.rs](https://rustup.rs)
-- **rexx interpreter** ([patch-rexx](https://github.com/navicore/patch-rexx)): must be in your `PATH`
+- **rexx interpreter** ([patch-rexx](https://git.navicore.tech/navicore/patch-rexx)): must be in your `PATH`
 
 ## Getting Started
 
