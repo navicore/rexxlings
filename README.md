@@ -6,7 +6,7 @@ Inspired by [rustlings](https://github.com/rust-lang/rustlings), rexxlings guide
 
 **Home Code Repository** is at [git.navicore.tech](https://git.navicore.tech/navicore/rexxlings)
 
-**PRs and issues** welcome at [codeberg.org mirror](https://codeberg.org/navicore/rexxlings)
+**PRs and issues** welcome at the [GitHub mirror](https://github.com/navicore/rexxlings)
 
 ## Prerequisites
 
